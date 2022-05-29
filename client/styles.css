@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300;400;600&display=swap');
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  margin-top: 10%;
+  margin-left: 1%;
+}
+/* poll */
+
+.poll {
+  width: 500px;
+  padding: 1.5rem;
+  margin: 70px;
+  font-family: 'Source Serif Pro', serif;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+
+  background: rgb(250, 249, 249);
+}
+
+.poll__title {
+  font-weight: bold;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 2.5rem;
+  text-decoration: underline;
+}
+
+.poll__option:hover {
+  cursor: pointer;
+}
+
+.poll__option:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.poll__option--selected .poll__option-bar {
+  background: #009578;
+}
+
+.poll__option--selected .poll__option-info {
+  font-weight: bold;
+}
+
+.poll__option-bar {
+  width: 50%;
+  height: 10px;
+  background: #ddd;
+}
+
+.poll__option-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  font-size: 1.35rem;
+}
